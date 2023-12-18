@@ -10,8 +10,8 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23.Test
         [TestMethod]
         public void ValidGetMatrix()
         {
-            
 
+            Assert.AreEqual(1, 1);
 
         }
     }

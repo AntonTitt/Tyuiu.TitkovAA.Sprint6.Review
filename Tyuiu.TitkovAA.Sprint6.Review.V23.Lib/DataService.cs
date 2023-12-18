@@ -16,9 +16,9 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23.Lib
         {
             int n = array.GetLength(0);
             int m = array.Length / n;
+            
 
-
-            if (n <= 1 || m <= 1 || n1 >= n2 || k >= l || c >= n)
+            if (n <= 1 || m <= 1 || n1 >= n2 || k >= l)//|| c < n --неворкает(((
             {
                 return 0;
             }
@@ -26,13 +26,15 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23.Lib
 
             int cunt = 1;
 
-            for (int i = k; i < l; i++)
+            for (int i = k; i <= l; i++)
             {
-                if (array[c, i] % 2 == 0)
+                if (i % 2 == 0)
                 {
                     cunt *= array[c, i];
                 }
             }
+
+
 
             return cunt;
         }

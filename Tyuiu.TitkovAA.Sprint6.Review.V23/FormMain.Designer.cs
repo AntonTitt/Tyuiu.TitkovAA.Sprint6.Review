@@ -52,6 +52,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             this.textBox_M_TAA = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox_re_TAA = new System.Windows.Forms.TextBox();
+            this.buttonMatrGen_TAA = new System.Windows.Forms.Button();
             this.groupBoxTask_TAA.SuspendLayout();
             this.groupBoxOutput_TAA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_YAMETE_TAA)).BeginInit();
@@ -61,6 +62,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             // 
             // groupBoxTask_TAA
             // 
+            this.groupBoxTask_TAA.Controls.Add(this.buttonMatrGen_TAA);
             this.groupBoxTask_TAA.Controls.Add(this.buttonDO_TAA);
             this.groupBoxTask_TAA.Location = new System.Drawing.Point(12, 12);
             this.groupBoxTask_TAA.Name = "groupBoxTask_TAA";
@@ -277,6 +279,17 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             this.textBox_re_TAA.Size = new System.Drawing.Size(100, 22);
             this.textBox_re_TAA.TabIndex = 0;
             // 
+            // buttonMatrGen_TAA
+            // 
+            this.buttonMatrGen_TAA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.buttonMatrGen_TAA.Location = new System.Drawing.Point(573, 21);
+            this.buttonMatrGen_TAA.Name = "buttonMatrGen_TAA";
+            this.buttonMatrGen_TAA.Size = new System.Drawing.Size(116, 72);
+            this.buttonMatrGen_TAA.TabIndex = 1;
+            this.buttonMatrGen_TAA.Text = "Сгенерировать матрицу";
+            this.buttonMatrGen_TAA.UseVisualStyleBackColor = false;
+            this.buttonMatrGen_TAA.Click += new System.EventHandler(this.buttonMatrGen_TAA_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -287,6 +300,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             this.Controls.Add(this.groupBoxOutput_TAA);
             this.Controls.Add(this.groupBoxTask_TAA);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Review | Вариант 23 | Титков А. А.";
             this.groupBoxTask_TAA.ResumeLayout(false);
             this.groupBoxOutput_TAA.ResumeLayout(false);
@@ -324,6 +338,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox_re_TAA;
+        private System.Windows.Forms.Button buttonMatrGen_TAA;
     }
 }
 
