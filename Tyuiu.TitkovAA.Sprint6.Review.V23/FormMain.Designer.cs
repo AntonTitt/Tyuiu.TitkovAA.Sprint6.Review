@@ -29,40 +29,41 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.groupBoxTask_TAA = new System.Windows.Forms.GroupBox();
-            this.groupBoxOutput_TAA = new System.Windows.Forms.GroupBox();
-            this.dataGridView_YAMETE_TAA = new System.Windows.Forms.DataGridView();
-            this.groupBoxMatr_TAA = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBoxZADANIE_TAA = new System.Windows.Forms.TextBox();
             this.buttonDO_TAA = new System.Windows.Forms.Button();
-            this.textBox_n1_TAA = new System.Windows.Forms.TextBox();
-            this.textBox_n2_TAA = new System.Windows.Forms.TextBox();
-            this.textBox_c_TAA = new System.Windows.Forms.TextBox();
-            this.textBox_k_TAA = new System.Windows.Forms.TextBox();
-            this.textBox_l_TAA = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.groupBoxOutput_TAA = new System.Windows.Forms.GroupBox();
+            this.labelN_TAA = new System.Windows.Forms.Label();
             this.textBox_N_TAA = new System.Windows.Forms.TextBox();
             this.textBox_M_TAA = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelM_TAA = new System.Windows.Forms.Label();
+            this.labelURODI_TAA = new System.Windows.Forms.Label();
+            this.labelDIAPZNACH_TAA = new System.Windows.Forms.Label();
+            this.labeln1_TAA = new System.Windows.Forms.Label();
+            this.textBox_n1_TAA = new System.Windows.Forms.TextBox();
+            this.labelL_TAA = new System.Windows.Forms.Label();
+            this.textBox_n2_TAA = new System.Windows.Forms.TextBox();
+            this.labeln2_TAA = new System.Windows.Forms.Label();
+            this.labelk_TAA = new System.Windows.Forms.Label();
+            this.labelc_TAA = new System.Windows.Forms.Label();
+            this.textBox_l_TAA = new System.Windows.Forms.TextBox();
+            this.textBox_k_TAA = new System.Windows.Forms.TextBox();
+            this.textBox_c_TAA = new System.Windows.Forms.TextBox();
+            this.dataGridView_YAMETE_TAA = new System.Windows.Forms.DataGridView();
+            this.groupBoxMatr_TAA = new System.Windows.Forms.GroupBox();
+            this.groupBoxOUT_TAA = new System.Windows.Forms.GroupBox();
             this.textBox_re_TAA = new System.Windows.Forms.TextBox();
-            this.buttonMatrGen_TAA = new System.Windows.Forms.Button();
             this.groupBoxTask_TAA.SuspendLayout();
             this.groupBoxOutput_TAA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_YAMETE_TAA)).BeginInit();
             this.groupBoxMatr_TAA.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxOUT_TAA.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxTask_TAA
             // 
-            this.groupBoxTask_TAA.Controls.Add(this.buttonMatrGen_TAA);
+            this.groupBoxTask_TAA.Controls.Add(this.textBoxZADANIE_TAA);
             this.groupBoxTask_TAA.Controls.Add(this.buttonDO_TAA);
             this.groupBoxTask_TAA.Location = new System.Drawing.Point(12, 12);
             this.groupBoxTask_TAA.Name = "groupBoxTask_TAA";
@@ -71,21 +72,43 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             this.groupBoxTask_TAA.TabStop = false;
             this.groupBoxTask_TAA.Text = "Условие";
             // 
+            // textBoxZADANIE_TAA
+            // 
+            this.textBoxZADANIE_TAA.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.7F);
+            this.textBoxZADANIE_TAA.Location = new System.Drawing.Point(6, 21);
+            this.textBoxZADANIE_TAA.Multiline = true;
+            this.textBoxZADANIE_TAA.Name = "textBoxZADANIE_TAA";
+            this.textBoxZADANIE_TAA.ReadOnly = true;
+            this.textBoxZADANIE_TAA.Size = new System.Drawing.Size(634, 72);
+            this.textBoxZADANIE_TAA.TabIndex = 4;
+            this.textBoxZADANIE_TAA.Text = resources.GetString("textBoxZADANIE_TAA.Text");
+            // 
+            // buttonDO_TAA
+            // 
+            this.buttonDO_TAA.BackColor = System.Drawing.Color.Red;
+            this.buttonDO_TAA.Location = new System.Drawing.Point(646, 21);
+            this.buttonDO_TAA.Name = "buttonDO_TAA";
+            this.buttonDO_TAA.Size = new System.Drawing.Size(306, 72);
+            this.buttonDO_TAA.TabIndex = 0;
+            this.buttonDO_TAA.Text = "ПОСТРОИТЬ МАТРИЦУ";
+            this.buttonDO_TAA.UseVisualStyleBackColor = false;
+            this.buttonDO_TAA.Click += new System.EventHandler(this.buttonDO_TAA_Click);
+            // 
             // groupBoxOutput_TAA
             // 
-            this.groupBoxOutput_TAA.Controls.Add(this.label8);
+            this.groupBoxOutput_TAA.Controls.Add(this.labelN_TAA);
             this.groupBoxOutput_TAA.Controls.Add(this.textBox_N_TAA);
             this.groupBoxOutput_TAA.Controls.Add(this.textBox_M_TAA);
-            this.groupBoxOutput_TAA.Controls.Add(this.label9);
-            this.groupBoxOutput_TAA.Controls.Add(this.label7);
-            this.groupBoxOutput_TAA.Controls.Add(this.label6);
-            this.groupBoxOutput_TAA.Controls.Add(this.label1);
+            this.groupBoxOutput_TAA.Controls.Add(this.labelM_TAA);
+            this.groupBoxOutput_TAA.Controls.Add(this.labelURODI_TAA);
+            this.groupBoxOutput_TAA.Controls.Add(this.labelDIAPZNACH_TAA);
+            this.groupBoxOutput_TAA.Controls.Add(this.labeln1_TAA);
             this.groupBoxOutput_TAA.Controls.Add(this.textBox_n1_TAA);
-            this.groupBoxOutput_TAA.Controls.Add(this.label5);
+            this.groupBoxOutput_TAA.Controls.Add(this.labelL_TAA);
             this.groupBoxOutput_TAA.Controls.Add(this.textBox_n2_TAA);
-            this.groupBoxOutput_TAA.Controls.Add(this.label2);
-            this.groupBoxOutput_TAA.Controls.Add(this.label4);
-            this.groupBoxOutput_TAA.Controls.Add(this.label3);
+            this.groupBoxOutput_TAA.Controls.Add(this.labeln2_TAA);
+            this.groupBoxOutput_TAA.Controls.Add(this.labelk_TAA);
+            this.groupBoxOutput_TAA.Controls.Add(this.labelc_TAA);
             this.groupBoxOutput_TAA.Controls.Add(this.textBox_l_TAA);
             this.groupBoxOutput_TAA.Controls.Add(this.textBox_k_TAA);
             this.groupBoxOutput_TAA.Controls.Add(this.textBox_c_TAA);
@@ -95,6 +118,141 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             this.groupBoxOutput_TAA.TabIndex = 1;
             this.groupBoxOutput_TAA.TabStop = false;
             this.groupBoxOutput_TAA.Text = "Ввод";
+            // 
+            // labelN_TAA
+            // 
+            this.labelN_TAA.AutoSize = true;
+            this.labelN_TAA.Location = new System.Drawing.Point(21, 148);
+            this.labelN_TAA.Name = "labelN_TAA";
+            this.labelN_TAA.Size = new System.Drawing.Size(18, 17);
+            this.labelN_TAA.TabIndex = 14;
+            this.labelN_TAA.Text = "N";
+            this.labelN_TAA.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // textBox_N_TAA
+            // 
+            this.textBox_N_TAA.Location = new System.Drawing.Point(62, 145);
+            this.textBox_N_TAA.Name = "textBox_N_TAA";
+            this.textBox_N_TAA.Size = new System.Drawing.Size(100, 22);
+            this.textBox_N_TAA.TabIndex = 12;
+            this.textBox_N_TAA.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
+            // 
+            // textBox_M_TAA
+            // 
+            this.textBox_M_TAA.Location = new System.Drawing.Point(62, 173);
+            this.textBox_M_TAA.Name = "textBox_M_TAA";
+            this.textBox_M_TAA.Size = new System.Drawing.Size(100, 22);
+            this.textBox_M_TAA.TabIndex = 13;
+            this.textBox_M_TAA.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
+            // 
+            // labelM_TAA
+            // 
+            this.labelM_TAA.AutoSize = true;
+            this.labelM_TAA.Location = new System.Drawing.Point(21, 178);
+            this.labelM_TAA.Name = "labelM_TAA";
+            this.labelM_TAA.Size = new System.Drawing.Size(19, 17);
+            this.labelM_TAA.TabIndex = 15;
+            this.labelM_TAA.Text = "M";
+            this.labelM_TAA.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // labelURODI_TAA
+            // 
+            this.labelURODI_TAA.AutoSize = true;
+            this.labelURODI_TAA.Location = new System.Drawing.Point(21, 121);
+            this.labelURODI_TAA.Name = "labelURODI_TAA";
+            this.labelURODI_TAA.Size = new System.Drawing.Size(115, 17);
+            this.labelURODI_TAA.TabIndex = 11;
+            this.labelURODI_TAA.Text = "Размер массива";
+            // 
+            // labelDIAPZNACH_TAA
+            // 
+            this.labelDIAPZNACH_TAA.AutoSize = true;
+            this.labelDIAPZNACH_TAA.Location = new System.Drawing.Point(21, 33);
+            this.labelDIAPZNACH_TAA.Name = "labelDIAPZNACH_TAA";
+            this.labelDIAPZNACH_TAA.Size = new System.Drawing.Size(141, 17);
+            this.labelDIAPZNACH_TAA.TabIndex = 10;
+            this.labelDIAPZNACH_TAA.Text = "Диапазон значений";
+            // 
+            // labeln1_TAA
+            // 
+            this.labeln1_TAA.AutoSize = true;
+            this.labeln1_TAA.Location = new System.Drawing.Point(21, 58);
+            this.labeln1_TAA.Name = "labeln1_TAA";
+            this.labeln1_TAA.Size = new System.Drawing.Size(24, 17);
+            this.labeln1_TAA.TabIndex = 5;
+            this.labeln1_TAA.Text = "n1";
+            // 
+            // textBox_n1_TAA
+            // 
+            this.textBox_n1_TAA.Location = new System.Drawing.Point(62, 55);
+            this.textBox_n1_TAA.Name = "textBox_n1_TAA";
+            this.textBox_n1_TAA.Size = new System.Drawing.Size(100, 22);
+            this.textBox_n1_TAA.TabIndex = 0;
+            // 
+            // labelL_TAA
+            // 
+            this.labelL_TAA.AutoSize = true;
+            this.labelL_TAA.Location = new System.Drawing.Point(21, 282);
+            this.labelL_TAA.Name = "labelL_TAA";
+            this.labelL_TAA.Size = new System.Drawing.Size(11, 17);
+            this.labelL_TAA.TabIndex = 9;
+            this.labelL_TAA.Text = "l";
+            // 
+            // textBox_n2_TAA
+            // 
+            this.textBox_n2_TAA.Location = new System.Drawing.Point(62, 83);
+            this.textBox_n2_TAA.Name = "textBox_n2_TAA";
+            this.textBox_n2_TAA.Size = new System.Drawing.Size(100, 22);
+            this.textBox_n2_TAA.TabIndex = 1;
+            // 
+            // labeln2_TAA
+            // 
+            this.labeln2_TAA.AutoSize = true;
+            this.labeln2_TAA.Location = new System.Drawing.Point(21, 88);
+            this.labeln2_TAA.Name = "labeln2_TAA";
+            this.labeln2_TAA.Size = new System.Drawing.Size(24, 17);
+            this.labeln2_TAA.TabIndex = 6;
+            this.labeln2_TAA.Text = "n2";
+            // 
+            // labelk_TAA
+            // 
+            this.labelk_TAA.AutoSize = true;
+            this.labelk_TAA.Location = new System.Drawing.Point(21, 254);
+            this.labelk_TAA.Name = "labelk_TAA";
+            this.labelk_TAA.Size = new System.Drawing.Size(15, 17);
+            this.labelk_TAA.TabIndex = 8;
+            this.labelk_TAA.Text = "k";
+            // 
+            // labelc_TAA
+            // 
+            this.labelc_TAA.AutoSize = true;
+            this.labelc_TAA.Location = new System.Drawing.Point(21, 226);
+            this.labelc_TAA.Name = "labelc_TAA";
+            this.labelc_TAA.Size = new System.Drawing.Size(15, 17);
+            this.labelc_TAA.TabIndex = 7;
+            this.labelc_TAA.Text = "c";
+            // 
+            // textBox_l_TAA
+            // 
+            this.textBox_l_TAA.Location = new System.Drawing.Point(62, 277);
+            this.textBox_l_TAA.Name = "textBox_l_TAA";
+            this.textBox_l_TAA.Size = new System.Drawing.Size(100, 22);
+            this.textBox_l_TAA.TabIndex = 4;
+            // 
+            // textBox_k_TAA
+            // 
+            this.textBox_k_TAA.Location = new System.Drawing.Point(62, 249);
+            this.textBox_k_TAA.Name = "textBox_k_TAA";
+            this.textBox_k_TAA.Size = new System.Drawing.Size(100, 22);
+            this.textBox_k_TAA.TabIndex = 3;
+            this.textBox_k_TAA.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // textBox_c_TAA
+            // 
+            this.textBox_c_TAA.Location = new System.Drawing.Point(62, 221);
+            this.textBox_c_TAA.Name = "textBox_c_TAA";
+            this.textBox_c_TAA.Size = new System.Drawing.Size(100, 22);
+            this.textBox_c_TAA.TabIndex = 2;
             // 
             // dataGridView_YAMETE_TAA
             // 
@@ -116,186 +274,30 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             this.groupBoxMatr_TAA.TabStop = false;
             this.groupBoxMatr_TAA.Text = "Матрица";
             // 
-            // groupBox1
+            // groupBoxOUT_TAA
             // 
-            this.groupBox1.Controls.Add(this.textBox_re_TAA);
-            this.groupBox1.Location = new System.Drawing.Point(234, 117);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(258, 321);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Вывод";
-            // 
-            // buttonDO_TAA
-            // 
-            this.buttonDO_TAA.BackColor = System.Drawing.Color.Red;
-            this.buttonDO_TAA.Location = new System.Drawing.Point(695, 21);
-            this.buttonDO_TAA.Name = "buttonDO_TAA";
-            this.buttonDO_TAA.Size = new System.Drawing.Size(96, 72);
-            this.buttonDO_TAA.TabIndex = 0;
-            this.buttonDO_TAA.Text = "ВЗОРВАТЬ КОМП";
-            this.buttonDO_TAA.UseVisualStyleBackColor = false;
-            this.buttonDO_TAA.Click += new System.EventHandler(this.buttonDO_TAA_Click);
-            // 
-            // textBox_n1_TAA
-            // 
-            this.textBox_n1_TAA.Location = new System.Drawing.Point(62, 55);
-            this.textBox_n1_TAA.Name = "textBox_n1_TAA";
-            this.textBox_n1_TAA.Size = new System.Drawing.Size(100, 22);
-            this.textBox_n1_TAA.TabIndex = 0;
-            // 
-            // textBox_n2_TAA
-            // 
-            this.textBox_n2_TAA.Location = new System.Drawing.Point(62, 83);
-            this.textBox_n2_TAA.Name = "textBox_n2_TAA";
-            this.textBox_n2_TAA.Size = new System.Drawing.Size(100, 22);
-            this.textBox_n2_TAA.TabIndex = 1;
-            // 
-            // textBox_c_TAA
-            // 
-            this.textBox_c_TAA.Location = new System.Drawing.Point(62, 221);
-            this.textBox_c_TAA.Name = "textBox_c_TAA";
-            this.textBox_c_TAA.Size = new System.Drawing.Size(100, 22);
-            this.textBox_c_TAA.TabIndex = 2;
-            // 
-            // textBox_k_TAA
-            // 
-            this.textBox_k_TAA.Location = new System.Drawing.Point(62, 249);
-            this.textBox_k_TAA.Name = "textBox_k_TAA";
-            this.textBox_k_TAA.Size = new System.Drawing.Size(100, 22);
-            this.textBox_k_TAA.TabIndex = 3;
-            this.textBox_k_TAA.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // textBox_l_TAA
-            // 
-            this.textBox_l_TAA.Location = new System.Drawing.Point(62, 277);
-            this.textBox_l_TAA.Name = "textBox_l_TAA";
-            this.textBox_l_TAA.Size = new System.Drawing.Size(100, 22);
-            this.textBox_l_TAA.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 17);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "n1=";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 17);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "n2=";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 226);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(23, 17);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "c=";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 254);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 17);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "k=";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 282);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 17);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "l=";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 33);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 17);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Диапазон значений";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 121);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 17);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Размер массива";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(21, 148);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(26, 17);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "N=";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // textBox_N_TAA
-            // 
-            this.textBox_N_TAA.Location = new System.Drawing.Point(62, 145);
-            this.textBox_N_TAA.Name = "textBox_N_TAA";
-            this.textBox_N_TAA.Size = new System.Drawing.Size(100, 22);
-            this.textBox_N_TAA.TabIndex = 12;
-            this.textBox_N_TAA.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            // 
-            // textBox_M_TAA
-            // 
-            this.textBox_M_TAA.Location = new System.Drawing.Point(62, 173);
-            this.textBox_M_TAA.Name = "textBox_M_TAA";
-            this.textBox_M_TAA.Size = new System.Drawing.Size(100, 22);
-            this.textBox_M_TAA.TabIndex = 13;
-            this.textBox_M_TAA.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(21, 178);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(27, 17);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "M=";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.groupBoxOUT_TAA.Controls.Add(this.textBox_re_TAA);
+            this.groupBoxOUT_TAA.Location = new System.Drawing.Point(234, 117);
+            this.groupBoxOUT_TAA.Name = "groupBoxOUT_TAA";
+            this.groupBoxOUT_TAA.Size = new System.Drawing.Size(258, 321);
+            this.groupBoxOUT_TAA.TabIndex = 2;
+            this.groupBoxOUT_TAA.TabStop = false;
+            this.groupBoxOUT_TAA.Text = "Вывод";
             // 
             // textBox_re_TAA
             // 
             this.textBox_re_TAA.Location = new System.Drawing.Point(6, 33);
             this.textBox_re_TAA.Name = "textBox_re_TAA";
+            this.textBox_re_TAA.ReadOnly = true;
             this.textBox_re_TAA.Size = new System.Drawing.Size(100, 22);
             this.textBox_re_TAA.TabIndex = 0;
-            // 
-            // buttonMatrGen_TAA
-            // 
-            this.buttonMatrGen_TAA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.buttonMatrGen_TAA.Location = new System.Drawing.Point(573, 21);
-            this.buttonMatrGen_TAA.Name = "buttonMatrGen_TAA";
-            this.buttonMatrGen_TAA.Size = new System.Drawing.Size(116, 72);
-            this.buttonMatrGen_TAA.TabIndex = 1;
-            this.buttonMatrGen_TAA.Text = "Сгенерировать матрицу";
-            this.buttonMatrGen_TAA.UseVisualStyleBackColor = false;
-            this.buttonMatrGen_TAA.Click += new System.EventHandler(this.buttonMatrGen_TAA_Click);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(982, 453);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBoxOUT_TAA);
             this.Controls.Add(this.groupBoxMatr_TAA);
             this.Controls.Add(this.groupBoxOutput_TAA);
             this.Controls.Add(this.groupBoxTask_TAA);
@@ -303,12 +305,13 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Review | Вариант 23 | Титков А. А.";
             this.groupBoxTask_TAA.ResumeLayout(false);
+            this.groupBoxTask_TAA.PerformLayout();
             this.groupBoxOutput_TAA.ResumeLayout(false);
             this.groupBoxOutput_TAA.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_YAMETE_TAA)).EndInit();
             this.groupBoxMatr_TAA.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxOUT_TAA.ResumeLayout(false);
+            this.groupBoxOUT_TAA.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -319,26 +322,26 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
         private System.Windows.Forms.GroupBox groupBoxOutput_TAA;
         private System.Windows.Forms.DataGridView dataGridView_YAMETE_TAA;
         private System.Windows.Forms.GroupBox groupBoxMatr_TAA;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxOUT_TAA;
         private System.Windows.Forms.Button buttonDO_TAA;
         private System.Windows.Forms.TextBox textBox_l_TAA;
         private System.Windows.Forms.TextBox textBox_k_TAA;
         private System.Windows.Forms.TextBox textBox_c_TAA;
         private System.Windows.Forms.TextBox textBox_n2_TAA;
         private System.Windows.Forms.TextBox textBox_n1_TAA;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelN_TAA;
         private System.Windows.Forms.TextBox textBox_N_TAA;
         private System.Windows.Forms.TextBox textBox_M_TAA;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelM_TAA;
+        private System.Windows.Forms.Label labelURODI_TAA;
+        private System.Windows.Forms.Label labelDIAPZNACH_TAA;
+        private System.Windows.Forms.Label labeln1_TAA;
+        private System.Windows.Forms.Label labelL_TAA;
+        private System.Windows.Forms.Label labeln2_TAA;
+        private System.Windows.Forms.Label labelk_TAA;
+        private System.Windows.Forms.Label labelc_TAA;
         private System.Windows.Forms.TextBox textBox_re_TAA;
-        private System.Windows.Forms.Button buttonMatrGen_TAA;
+        private System.Windows.Forms.TextBox textBoxZADANIE_TAA;
     }
 }
 

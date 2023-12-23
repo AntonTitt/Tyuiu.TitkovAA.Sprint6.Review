@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBoxZADANIE_TAA.Text" xml:space="preserve">
-    <value>Дан целочисленный двумерный массив N (N&gt;1) на M (M&gt;1) элементов, заполненный случайными числами в заданном диапазоне (от n1 до n2) с чередованием квадрата предыдущего значения и случайным значением следующего значения в столбцах. Найти произведение чётных элементов массива с номерами от K до L (нумерация начинается с нуля) включительно в заданной строке C. Произвести проверку на корректность ввода интервальных значений (n1&lt;n2, K&lt;L, и т.д.).</value>
-  </data>
 </root>

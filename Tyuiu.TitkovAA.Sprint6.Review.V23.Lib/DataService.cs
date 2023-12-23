@@ -18,7 +18,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23.Lib
             int m = array.Length / n;
             
 
-            if (n <= 1 || m <= 1 || n1 >= n2 || k >= l)//|| c < n --неворкает(((
+            if (n <= 1 || m <= 1 || n1 >= n2 || k >= l || c >= n)//|| c < n --неворкает(((
             {
                 return 0;
             }

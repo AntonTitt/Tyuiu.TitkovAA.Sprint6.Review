@@ -18,7 +18,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
         public FormMain()
         {
             InitializeComponent();
-
+            /*
             {
                 textBox_M_TAA.Text = "10";
                 textBox_N_TAA.Text = "10";
@@ -28,7 +28,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
                 textBox_k_TAA.Text = "4";
                 textBox_l_TAA.Text = "6";
             }
-
+            */
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -134,7 +134,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             }
             catch
             {
-                MessageBox.Show("GAVNO");
+                MessageBox.Show("Введены неверные данные", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -191,6 +191,13 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             {
                 MessageBox.Show("sdfghyjuikol;");
             }*/
+        }
+
+        private void buttonAbout_TAA_Click(object sender, EventArgs e)
+        {
+            FormAbout ab = new FormAbout();
+            ab.Show();
+
         }
     }
 }
