@@ -18,17 +18,17 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
         public FormMain()
         {
             InitializeComponent();
-            /*
+
             {
                 textBox_M_TAA.Text = "10";
                 textBox_N_TAA.Text = "10";
                 textBox_n1_TAA.Text = "1";
                 textBox_n2_TAA.Text = "7";
                 textBox_c_TAA.Text = "1";
-                textBox_k_TAA.Text = "4";
+                textBox_k_TAA.Text = "3";
                 textBox_l_TAA.Text = "6";
             }
-            */
+
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -80,7 +80,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
                 int[,] matrix = new int[rows, columns];
                 int n1 = Convert.ToInt32(textBox_n1_TAA.Text);
                 int n2 = Convert.ToInt32(textBox_n2_TAA.Text);
-                
+
 
                 int c = Convert.ToInt32(textBox_c_TAA.Text);
                 int k = Convert.ToInt32(textBox_k_TAA.Text);
@@ -92,7 +92,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
 
                 int cf = 0;
 
-                
+
 
                 for (int i = 0; i < columns; i++)
                 {
@@ -107,11 +107,12 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
 
                         if (j % 2 == 0)
                         {
-
+                            int a;
 
                             matrix[i, j] = Convert.ToInt32(rn.Next(Convert.ToInt32(textBox_n1_TAA.Text), Convert.ToInt32(textBox_n2_TAA.Text)));
-                            matrix[i, j + 1] = Convert.ToInt32(Math.Pow(matrix[i, j + 1], 2));
-
+                            matrix[i, j + 1] = Convert.ToInt32(Math.Pow(matrix[i, j+1], 2));
+                            a = matrix[i, j];
+                            matrix[i, j + 1]=a*a;
                             dataGridView_YAMETE_TAA.Rows[i].Cells[j].Value = matrix[i, j];
                             dataGridView_YAMETE_TAA.Rows[i].Cells[j + 1].Value = Math.Pow(matrix[i, j], 2);
 
@@ -126,9 +127,19 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
                     }
                 }
 
+                int n = matrix.GetLength(0);
+                int m = matrix.Length / n;
 
-                cf = dt.GetMatrix(matrix, n1, n2, c, k, l);
-                textBox_re_TAA.Text = Convert.ToString(cf);
+                if (n <= 1 || m <= 1 || n1 >= n2 || k >= l || c >= n)//|| c < n --неворкает(((
+                {
+                    textBox_re_TAA.Text = "0";
+                }
+                else
+                {
+
+                    cf = dt.GetMatrix(matrix, n1, n2, c, k, l);
+                    textBox_re_TAA.Text = Convert.ToString(cf);
+                }
 
 
             }

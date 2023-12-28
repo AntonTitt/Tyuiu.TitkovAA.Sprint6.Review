@@ -16,21 +16,22 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23.Lib
         {
             int n = array.GetLength(0);
             int m = array.Length / n;
-            
+            /*
 
             if (n <= 1 || m <= 1 || n1 >= n2 || k >= l || c >= n)//|| c < n --неворкает(((
             {
                 return 0;
-            }
+            }*/
 
 
-            int cunt = 1;
+            int cunt = 1,d=1;
 
-            for (int i = k; i <= l; i++)
+            for (int i = k; i < l; i++)
             {
-                if (i % 2 == 0)
+                d = array[i, c];
+                if (array[i, c] % 2 == 0)
                 {
-                    cunt *= array[c, i];
+                    cunt = cunt * array[c, i];
                 }
             }
 

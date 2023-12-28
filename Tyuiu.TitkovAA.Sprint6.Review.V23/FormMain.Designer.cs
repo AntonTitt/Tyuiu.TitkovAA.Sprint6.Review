@@ -256,6 +256,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             // 
             // dataGridView_YAMETE_TAA
             // 
+            this.dataGridView_YAMETE_TAA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_YAMETE_TAA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_YAMETE_TAA.Location = new System.Drawing.Point(6, 21);
             this.dataGridView_YAMETE_TAA.Name = "dataGridView_YAMETE_TAA";
@@ -266,6 +267,7 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23
             // 
             // groupBoxMatr_TAA
             // 
+            this.groupBoxMatr_TAA.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxMatr_TAA.Controls.Add(this.dataGridView_YAMETE_TAA);
             this.groupBoxMatr_TAA.Location = new System.Drawing.Point(498, 120);
             this.groupBoxMatr_TAA.Name = "groupBoxMatr_TAA";
