@@ -24,12 +24,12 @@ namespace Tyuiu.TitkovAA.Sprint6.Review.V23.Lib
             }*/
 
 
-            int cunt = 1,d=1;
+            int cunt = 1, d = 1;
 
             for (int i = k; i < l; i++)
             {
-                d = array[i, c];
-                if (array[i, c] % 2 == 0)
+                d = array[c, i];
+                if (array[c, i] % 2 == 0)
                 {
                     cunt = cunt * array[c, i];
                 }
